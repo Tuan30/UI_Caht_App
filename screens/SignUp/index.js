@@ -68,6 +68,9 @@ const SignUpScreen = () => {
           </View>
         </View>
       </View>
+      <View>
+        <Text>hih</Text>
+      </View>
       <View style={styles.footer}>
         <View style={styles.boxImage}>
           <Image

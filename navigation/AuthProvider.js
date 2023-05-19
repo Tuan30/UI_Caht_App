@@ -45,7 +45,9 @@ export const AuthProvider = ({ children }) => {
                     userCredential.user.updateProfile({
                       displayName: email,
                       photoURL: "https://firebasestorage.googleapis.com/v0/b/rn-app-05.appspot.com/o/default%2Favatar_default.png?alt=media&token=35172c74-fcc4-4227-8c03-81f366d22fa5"
-                    }).then(() => {
+                    })
+                    console.log(userCredential.user)
+                    .then(() => {
                       navigation.navigate('Login')
                       showNotice(MESSAGE.registerSuccess)
                     }).catch((error) => {
